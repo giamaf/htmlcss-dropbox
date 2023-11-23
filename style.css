@@ -3,4 +3,112 @@ body {
     Margin: 0;
     Padding: 0;
     Box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Generics */
+.containerl {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.containerm {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    gap: 40px;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 75%;
+}
+
+.fa-dropbox {
+    color: rgb(40, 95, 246);
+    line-height: 19px;
+}
+
+.btn-blue {
+    color: white;
+    background-color: rgb(40, 95, 246);
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+h3 {
+    margin: 0;
+    vertical-align: middle;
+}
+
+/* !Header*/
+
+/* !Top */
+header {
+    height: 600px;
+    background-color: rgb(185, 207, 229);
+    border: 2px dashed red;
+}
+
+.header-top {
+    height: 50px;
+    border: 2px dashed red;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+.header-top>* {
+    align-items: center;
+    gap: 5px;
+}
+
+.header-left,
+.header-right {
+    align-items: center;
+    border: 2px dashed red;
+}
+
+.header-list {
+    margin-left: 25px;
+}
+
+/* !Bottom */
+.header-bottom {
+    border: 2px dashed red;
+}
+
+.header-bottom h1 {
+    max-width: 70%;
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.jumbotron-left {
+    flex-basis: 30%;
+}
+
+.jumbotron-left p {
+    font-size: 12px;
+}
+
+.jumbotron-right {
+    flex-basis: 70%;
 }
