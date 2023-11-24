@@ -23,13 +23,12 @@
     padding: 20px 0px
 }
 
-.containerxs {
-    max-width: 100%;
-    padding: 20px 0px
-}
-
 .flex {
     display: flex;
+}
+
+.row {
+    flex-wrap: wrap;
 }
 
 .column {
@@ -70,6 +69,13 @@ img {
     font-size: 0.9em;
 }
 
+.btn-btn-white {
+    color: black;
+    padding: 5px 20px;
+    font-size: 0.8em;
+    background-color: rgb(245, 245, 245)
+}
+
 h1 {
     font-size: 1.6em;
     font-family: sans-serif;
@@ -84,7 +90,7 @@ h1 {
 }
 
 section {
-    margin: 150px;
+    margin-top: 150px;
 }
 
 #description {
@@ -111,7 +117,52 @@ section {
 #plan-period {
     font: 0.8em bold lightgray;
     font-family: 'sans-serif';
+}
 
+.box {
+    width: 50%;
+    height: 50%;
+}
+
+.box-b {
+    width: 100%;
+    height: 100%;
+}
+
+.green {
+    background-color: rgb(172, 210, 160);
+}
+
+.brown {
+    background-color: rgb(89, 19, 43);
+}
+
+.light-blue {
+    background-color: rgb(64, 145, 201);
+}
+
+.light-red {
+    background-color: rgb(234, 60, 47);
+}
+
+.red {
+    background-color: rgb(195, 41, 43);
+}
+
+.light-light-blue {
+    background-color: rgb(185, 207, 229);
+}
+
+.blue {
+    background-color: rgb(19, 35, 124);
+}
+
+.yellow {
+    background-color: rgb(249, 217, 86);
+}
+
+.light-grey {
+    background-color: rgb(245, 245, 245)
 }
 
 /* !Header*/
@@ -184,7 +235,7 @@ header {
 /* TodoMain */
 
 /* *Plans section */
-.row {
+.row-plans {
     flex-wrap: wrap;
     gap: 43px;
 }
@@ -240,7 +291,7 @@ h6 {
 }
 
 /* *Large card */
-.row .col-plans:last-of-type {
+.row-plans .col-plans:last-of-type {
     flex-basis: 100%;
 }
 
@@ -264,12 +315,17 @@ h6 {
 }
 
 /* *Business pack pro */
-section a {
+section.business {
+    margin-top: 150px;
+}
+
+.business a:last-of-type {
     text-decoration: underline;
     margin: 30px 0;
 }
 
 .row.business {
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -286,4 +342,79 @@ section a {
     max-width: 80%;
     margin: 20px;
     align-self: center;
+}
+
+/* *Partners section */
+
+/* *Top */
+#imagepartners {
+    max-width: 40%;
+    filter: invert();
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+#imagepartners-b {
+    max-width: 30%;
+}
+
+.box-b>* {
+    margin: 30px 30px;
+}
+
+.partners .row.flex {
+    height: 700px;
+}
+
+.col-partners {
+    flex-basis: calc(100% / 3);
+}
+
+.left,
+.right {
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* *Bottom */
+.partners-bottom {
+    height: 300px;
+}
+
+.partners-bottom .containerm.flex {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerm.flex h1 {
+    flex-basis: 30%;
+    margin: 0;
+    color: rgb(89, 18, 42);
+}
+
+/* *Faq section */
+section.faq {
+    margin-top: 100px;
+}
+
+.faq h1 {
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+
+.faq ul span {
+    padding-right: 30px;
+}
+
+.faq ul li {
+    text-indent: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    padding: 20px 0;
+    border-top: 1px solid gray;
 }
