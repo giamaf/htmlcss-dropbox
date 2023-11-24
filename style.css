@@ -398,6 +398,7 @@ section.business {
 /* *Faq section */
 section.faq {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .faq h1 {
@@ -417,4 +418,41 @@ section.faq {
     margin-right: 30px;
     padding: 20px 0;
     border-top: 1px solid gray;
+}
+
+/* ?Footer */
+footer {
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+
+.footer-list {
+    flex-basis: calc(100% / 5);
+    padding: 60px 0;
+    color: white;
+}
+
+ul.footer-list h2 {
+    font: 1.3em bold;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+
+#break-line-footer {
+    max-width: 1200px;
+    width: 5%;
+    margin: 30px 339px;
+    border: 1px solid gray;
+}
+
+ul.footer-list li {
+    line-height: 40px;
+}
+
+.language {
+    color: gray;
+    padding-bottom: 40px;
+    height: 80px;
+    gap: 5px;
 }
