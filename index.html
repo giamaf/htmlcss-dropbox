@@ -39,7 +39,7 @@
                     <li><a href="#">Supporto</a></li>
                     <li><a href="#">Contatta l'ufficio vendite</a></li>
                     <li><a href="#">Accedi</a></li>
-                    <li><a class="btn-blue"="#">Inizia</a></li>
+                    <li><a class="btn-blue" href="#">Inizia</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +52,8 @@
                 <div class="jumbotron-left">
                     <ul>
                         <li>
-                            <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo
+                            <p id="description">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono
+                                accessibili dallo
                                 stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo
                                 intelligente e integrato per ottimizzare il flusso di lavoro esistente</p>
                         </li>
@@ -63,7 +64,7 @@
                             <p>Annulla in qualsiasi momento</p>
                         </li>
                         <li>
-                            <i class="fa-solid fa-arrow-down"></i>
+                            <i class="fa-solid fa-arrow-down fa-2xl"></i>
                         </li>
                     </ul>
                 </div>
@@ -75,13 +76,356 @@
         </div>
     </header>
 
-    <!-- <main>
-        <div class="containerm">
-            <section class="plan list">
-                <h3>Trova il piano business che fa per te</h3>
-            </section>
-        </div>
-    </main> -->
+    <!-- todoMain -->
+    <main>
+        <section class="plans containerm">
+            <div class="row">
+
+                <!-- Plan-list -->
+                <div class="plans-header">
+                    <h1>Trova il piano business che fa per te</h1>
+                    <div class="billing-type flex">
+                        <div class="billing-monthly">
+                            <span></span>
+                            <span>Fatturazione mensile</span>
+                        </div>
+                        <div class="billing-annual">
+                            <span></span>
+                            <span>Fatturazione annuale</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *Cards -->
+            <div class="row flex">
+
+                <div class="col-plans">
+
+                    <!-- *Card Header -->
+                    <div class="card">
+                        <div class="card-header">
+                            <span><i class="fa-solid fa-user fa-xs"></i></span>
+                            <span>Singolo</span>
+                        </div>
+
+                        <!-- *Card Main -->
+                        <div class="containers flex column">
+                            <div class="card-top">
+                                <ul>
+                                    <li>
+                                        <h3 id="title">Professional</h3>
+                                    </li>
+                                    <li>
+                                        <h5 id="price">&euro;12.00</h5>
+                                    </li>
+                                    <li>
+                                        <h5 id="plan-period">/mese</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-main">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-user fa-xs"></i>
+                                        <span>1 utente</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-folder fa-xs"></i>
+                                        <span>5 TB di archiviazione sicuro</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-share-nodes fa-xs"></i>
+                                        <span>Funzioni di produttività premium e condivisione file semplice e
+                                            sicura</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="try-buy flex column"><a href="#">Prova gratis per 30 giorni</a></div>
+                            <span>oppure <a href="#">acquista ora</a></span>
+
+                            <!-- *Line Break -->
+                            <div class="break-line"></div>
+
+                            <!-- *Card Footer -->
+                            <div class="card-footer">
+                                <h6 class="plan-pro">Punti Salienti del Piano</h6>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Invia file fino a 100 GB con Dropbox Transfert</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Cartelle offline su dispositivi mobili</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-plans">
+
+                    <!-- *Card Header -->
+                    <div class="card">
+                        <div class="card-header">
+                            <span><i class="fa-solid fa-people-group"></i></span>
+                            <span>Team</span>
+                        </div>
+
+                        <!-- *Card Main -->
+                        <div class="containers flex column">
+                            <div class="card-top">
+                                <ul>
+                                    <li>
+                                        <h3 id="title">Advanced</h3>
+                                    </li>
+                                    <li>
+                                        <h5 id="price">&euro;18.00</h5>
+                                    </li>
+                                    <li>
+                                        <h5 id="plan-period">/utente/mese</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-main">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-people-group"></i>
+                                        <span>3 o più utenti</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-folder fa-xs"></i>
+                                        <span>Tutto lo spazio di cui ha bisogno il tuo team</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-share-nodes fa-xs"></i>
+                                        <span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i files
+                                            del
+                                            tuo team</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="try-buy flex column"><a href="#">Prova gratis per 30 giorni</a></div>
+                            <span>oppure <a href="#">acquista ora</a></span>
+
+                            <!-- *Line Break -->
+                            <div class="break-line"></div>
+
+                            <!-- *Card Footer -->
+                            <div class="card-footer">
+                                <h6 class="plan-pro">Punti Salienti del Piano</h6>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Nessun limite di spazio per i files</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Cartelle offline su dispositivi mobili</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Risparmio del 50% rispetto alle iscrizioni singole</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Possibilità di inserire nuovi membri del team</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Gestione dei permessi in base ai ruoli</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-plans">
+
+                    <!-- *Card Header -->
+                    <div class="card">
+                        <div class="card-header">
+                            <span><i class="fa-solid fa-building"></i></span>
+                            <span>Azienda</span>
+                        </div>
+
+                        <!-- *Card Main -->
+                        <div class="containers flex column">
+                            <div class="card-top">
+                                <ul>
+                                    <li>
+                                        <h3 id="title">Enterprise</h3>
+                                    </li>
+                                    <li>
+                                        <h5 id="price">Contattaci</h5>
+                                    </li>
+                                    <li>
+                                        <h5 id="plan-period">-</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-main">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-user fa-xs"></i>
+                                        <span>10 o più utenti</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-folder fa-xs"></i>
+                                        <span>Soluzioni personalizzabili per la tua azienda</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-share-nodes fa-xs"></i>
+                                        <span>Assistenza personalizzata per aiutare gli amministratori in una
+                                            gestione
+                                            su larga scala</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="try-buy flex column"><a href="#">Contattaci</a></div>
+
+
+                            <span>oppure <a href="#">acquista ora</a></span>
+                            <!-- *Line Break -->
+                            <div class="break-line"></div>
+
+                            <!-- *Card Footer -->
+                            <div class="card-footer">
+                                <h6 class="plan-pro">Punti Salienti del Piano</h6>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Cartelle offline su dispositivi mobili</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Servizio assisrenza 24/h</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Possibilità di personalizzazione totale</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-plans">
+
+                    <!-- *Card Header -->
+                    <div class="card">
+                        <div class="card-header">
+                            <span><i class="fa-solid fa-building"></i></span>
+                            <span>Team</span>
+                        </div>
+
+                        <!-- *Card Main -->
+                        <div class="containers flex">
+                            <div class="large-left card-top">
+                                <ul>
+                                    <li>
+                                        <h3 id="title">Enterprise</h3>
+                                    </li>
+                                    <li>
+                                        <h6 id="price">Contatta l'ufficio vendite per i prezzi</h6>
+                                    </li>
+                                    <li>
+                                        <h3 id="price">Soluzioni personalizzate e supporto su misura per aiutare i
+                                            professionisti IT
+                                            nella gestione su qualsiasi scala</h3>
+                                    </li>
+                            </div>
+                            <div class="large-right try-buy">
+                                <a href="#">Contatta l'ufficio vendite</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- *Find-partner section -->
+        <section class="find-partner">
+            <div class="containerm flex">
+                <img src="img/partner.png" alt="imagepartner">
+                <div class="text">
+                    <h3 id="title">Entra in contatto con un partner Dropbox</h3>
+                    <p id="description">Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i
+                        servizi necessari per
+                        raggiungere i tuoi obiettivi aziendali, tra cui implementazione. integrazione, gestione e
+                        supporto continui.</p>
+                    <a class="btn-white" href="#">Trova un partner</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- *Business pack pro -->
+        <section class="business containerm">
+            <h1>Esegui più operazioni con Dropbox Business</h1>
+            <div class="row business flex">
+                <div class="col-business flex column">
+                    <img id="imagebusiness" src="img/business-feature-coordinate-it.png" alt="">
+                    <h3 id="title">Passa di meno da uno strumento all'altro</h3>
+                    <p id="description">Porta a termine le attività quotidiane con un solo strumento. Crea modifica e
+                        condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e
+                        Dropbox Paper direttamente da Dropbox.</p>
+                </div>
+                <div class="col-business flex column">
+                    <img id="imagebusiness" src="img/business-feature-integrations-it.png" alt="">
+                    <h3 id="title">Passa di meno da uno strumento all'altro</h3>
+                    <p id="description">Porta a termine le attività quotidiane con un solo strumento. Crea modifica e
+                        condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e
+                        Dropbox Paper direttamente da Dropbox.</p>
+                </div>
+                <div class="col-business flex column">
+                    <img id="imagebusiness" src="img/business-feature-multi-device.png" alt="">
+                    <h3 id="title">Passa di meno da uno strumento all'altro</h3>
+                    <p id="description">Porta a termine le attività quotidiane con un solo strumento. Crea modifica e
+                        condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e
+                        Dropbox Paper direttamente da Dropbox.</p>
+                </div>
+                <div class="col-business flex column">
+                    <img id="imagebusiness" src="img/business-feature-security.png" alt="">
+                    <h3 id="title">Passa di meno da uno strumento all'altro</h3>
+                    <p id="description">Porta a termine le attività quotidiane con un solo strumento. Crea modifica e
+                        condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e
+                        Dropbox Paper direttamente da Dropbox.</p>
+                </div>
+                <div class="col-business flex column">
+                    <img id="imagebusiness" src="img/business-feature-send-files-it.png" alt="">
+                    <h3 id="title">Passa di meno da uno strumento all'altro</h3>
+                    <p id="description">Porta a termine le attività quotidiane con un solo strumento. Crea modifica e
+                        condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e
+                        Dropbox Paper direttamente da Dropbox.</p>
+                </div>
+                <div class="col-business flex column">
+                    <img id="imagebusiness" src="img/business-feature-switching-tools.png" alt="">
+                    <h3 id="title">Passa di meno da uno strumento all'altro</h3>
+                    <p id="description">Porta a termine le attività quotidiane con un solo strumento. Crea modifica e
+                        condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e
+                        Dropbox Paper direttamente da Dropbox.</p>
+                </div>
+                <div class="col-business flex column">
+                    <h1>Più di 500.000 team utilizzano Dropbox Business</h1>
+                    <a href="#">Scopri di più sui nostri clienti</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="row">
+
+
+
+            </div>
+
+        </section>
+    </main>
 
 </body>
 

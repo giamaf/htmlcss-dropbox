@@ -1,5 +1,5 @@
 /* Reset CSS */
-body {
+* {
     Margin: 0;
     Padding: 0;
     Box-sizing: border-box;
@@ -17,8 +17,23 @@ body {
     margin: 0 auto;
 }
 
+.containers {
+    max-width: 100%;
+    margin: 0 30px;
+    padding: 20px 0px
+}
+
+.containerxs {
+    max-width: 100%;
+    padding: 20px 0px
+}
+
 .flex {
     display: flex;
+}
+
+.column {
+    flex-direction: column;
 }
 
 ul {
@@ -33,7 +48,7 @@ a {
 }
 
 img {
-    max-width: 75%;
+    max-width: 80%;
 }
 
 .fa-dropbox {
@@ -45,12 +60,58 @@ img {
     color: white;
     background-color: rgb(40, 95, 246);
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: 0.9em;
 }
 
-h3 {
-    margin: 0;
-    vertical-align: middle;
+.btn-white {
+    color: gray;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.break-line {
+    height: 1px;
+    width: 20%;
+    background-color: lightgray;
+    margin: 30px 0;
+}
+
+section {
+    margin: 150px;
+}
+
+#description {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#title {
+    font: 1.2em bold black;
+    font-family: sans-serif;
+    font-weight: 550;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#price {
+    font: 0.9em bold black;
+    font-family: 'sans-serif';
+    font-weight: 550;
+    margin: 15px 0;
+}
+
+#plan-period {
+    font: 0.8em bold lightgray;
+    font-family: 'sans-serif';
+
 }
 
 /* !Header*/
@@ -59,18 +120,21 @@ h3 {
 header {
     height: 600px;
     background-color: rgb(185, 207, 229);
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
+    margin-bottom: 150px;
 }
 
 .header-top {
     height: 50px;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     background-color: white;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
-    margin-bottom: 40px;
-    font-size: 12px;
+    padding: 5px 15px;
+    font-size: 0.8em;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .header-top>* {
@@ -81,7 +145,7 @@ header {
 .header-left,
 .header-right {
     align-items: center;
-    border: 2px dashed red;
+    /* border: 1px dashed red; */
 }
 
 .header-list {
@@ -90,25 +154,136 @@ header {
 
 /* !Bottom */
 .header-bottom {
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
 }
 
 .header-bottom h1 {
     max-width: 70%;
     font-family: sans-serif;
-    font-size: 60px;
+    font-size: 4em;
     font-weight: 900;
-    margin: 20px 0;
+    margin: 40px 0;
+}
+
+.jumbotron {
+    margin-top: 40px;
 }
 
 .jumbotron-left {
     flex-basis: 30%;
 }
 
-.jumbotron-left p {
-    font-size: 12px;
+.jumbotron-left li {
+    margin-bottom: 50px;
 }
 
 .jumbotron-right {
     flex-basis: 70%;
+}
+
+/* TodoMain */
+
+/* *Plans section */
+.row {
+    flex-wrap: wrap;
+    gap: 43px;
+}
+
+.col-plans {
+    flex-basis: calc(100% / 3 - 86px / 3);
+    border: 1px solid lightgray;
+}
+
+.billing-type {
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+
+
+.card-header {
+    border-bottom: 1px solid lightgrey;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.7em;
+}
+
+.card-main,
+.card-footer ul:last-of-type {
+    font-size: 0.7em;
+    margin-top: 30px;
+}
+
+main li {
+    margin: 10px 0;
+    text-indent: -5px;
+}
+
+.try-buy>a {
+    font-size: 0.8em;
+    color: white;
+    background-color: rgb(40, 95, 246);
+    margin: 30px 0;
+    padding: 5px 49px;
+    text-align: center;
+}
+
+.card-footer {
+    line-height: 1.5em;
+}
+
+h6 {
+    font: 0.8em black;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* *Large card */
+.row .col-plans:last-of-type {
+    flex-basis: 100%;
+}
+
+.large-left.card-top {
+    flex-basis: calc((100% / 3)*2 + 46px);
+}
+
+.large-right {
+    padding: 15px 0 0 30px;
+    width: 30%;
+}
+
+/* *Find-partner section */
+.find-partner img {
+    max-width: 50%;
+}
+
+.text {
+    flex-basis: 35%;
+    padding: 30px 40px;
+}
+
+/* *Business pack pro */
+section a {
+    text-decoration: underline;
+    margin: 30px 0;
+}
+
+.row.business {
+    gap: 20px;
+}
+
+.col-business {
+    flex-basis: calc(100% / 3 - 40px / 3);
+}
+
+.col-business:last-of-type {
+    margin-top: 100px;
+    flex-basis: 40%;
+}
+
+#imagebusiness {
+    max-width: 80%;
+    margin: 20px;
+    align-self: center;
 }
