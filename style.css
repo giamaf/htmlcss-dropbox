@@ -55,7 +55,7 @@ img {
     line-height: 19px;
 }
 
-.btn-blue {
+#btn-blue {
     color: white;
     background-color: rgb(40, 95, 246);
     padding: 5px 10px;
@@ -66,7 +66,7 @@ img {
     color: gray;
     border: 1px solid gray;
     padding: 5px 10px;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .btn-btn-white {
@@ -173,6 +173,7 @@ header {
     background-color: rgb(185, 207, 229);
     /* border: 2px dashed red; */
     margin-bottom: 150px;
+    margin-top: 50px;
 }
 
 .header-top {
@@ -183,9 +184,16 @@ header {
     align-items: center;
     padding: 5px 15px;
     font-size: 0.8em;
-    position: sticky;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
+    width: 100%;
+    box-shadow: 2px 1px 1px lightgray;
+}
+
+.header-top a {
+    color: black;
 }
 
 .header-top>* {
@@ -196,7 +204,6 @@ header {
 .header-left,
 .header-right {
     align-items: center;
-    /* border: 1px dashed red; */
 }
 
 .header-list {
@@ -205,7 +212,7 @@ header {
 
 /* !Bottom */
 .header-bottom {
-    /* border: 2px dashed red; */
+    padding-top: 50px;
 }
 
 .header-bottom h1 {
@@ -300,8 +307,12 @@ h6 {
 }
 
 .large-right {
-    padding: 15px 0 0 30px;
-    width: 30%;
+    padding: 15px 0 0 34px;
+    width: 29%;
+}
+
+.large-left #description {
+    margin-top: 50px;
 }
 
 /* *Find-partner section */
