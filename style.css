@@ -212,7 +212,7 @@ header {
 
 /* !Bottom */
 .header-bottom {
-    padding-top: 50px;
+    padding-top: 55px;
 }
 
 .header-bottom h1 {
@@ -432,38 +432,50 @@ section.faq {
 }
 
 /* ?Footer */
+
+/* ?Footer top */
 footer {
     background-color: black;
     border-bottom: 1px solid white;
 }
 
-.footer-list {
-    flex-basis: calc(100% / 5);
+footer .footer-top {
     padding: 60px 0;
     color: white;
+    justify-content: space-between;
 }
 
-ul.footer-list h2 {
+.footer-top ul h2 {
     font: 1.3em bold;
     font-weight: 600;
     font-family: sans-serif;
     padding-bottom: 20px;
 }
 
-#break-line-footer {
-    max-width: 1200px;
-    width: 5%;
-    margin: 30px 339px;
-    border: 1px solid gray;
+.footer-top ul li {
+    line-height: 30px;
 }
 
-ul.footer-list li {
-    line-height: 40px;
-}
 
-.language {
+
+/* #break-line-footer {
+    width: 30px;
+    height: 4px;
     color: gray;
-    padding-bottom: 40px;
-    height: 80px;
-    gap: 5px;
+    border: 1px solid gray;
+} */
+
+
+/* ?Footer bottom */
+
+.footer-bottom {
+    color: gray;
+}
+
+.footer-bottom ul {
+    display: flex;
+    gap: 10px;
+    width: 10%;
+    padding: 30px 0;
+    border-top: 1px solid white;
 }
