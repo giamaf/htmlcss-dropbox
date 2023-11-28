@@ -332,6 +332,10 @@ main .plans li {
     line-height: 1.5em;
 }
 
+.card-footer h5 {
+    font-family: sans-serif;
+}
+
 /* *Large card */
 .row-plans .col-plans:last-of-type {
     flex-basis: 100%;
@@ -372,12 +376,16 @@ section.business {
 }
 
 .row.business {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px;
 }
 
 .col-business {
     flex-basis: calc(100% / 3 - 40px / 3);
+}
+
+.col-business .title {
+    text-align: start;
 }
 
 .col-business:last-of-type {
@@ -511,6 +519,11 @@ section.faq {
 footer {
     background-color: black;
     border-bottom: 1px solid white;
+}
+
+footer a {
+    color: white;
+    font-size: 0.9em;
 }
 
 footer .footer-top {
