@@ -376,7 +376,6 @@ section.business {
 }
 
 .row.business {
-    flex-wrap: nowrap;
     gap: 20px;
 }
 
